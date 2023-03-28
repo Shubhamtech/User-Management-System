@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:wght@300;400;500;600;700;900&family=PT+Sans&family=Roboto&family=Ubuntu:wght@300&display=swap');
+:root{
+    --dark:#1211116f;
+    --light:#a89e9e;
+    --border:#f4eded;
+    --border-btn:#ede7e7;
+}
+
+*{
+ padding:0;
+ margin: 0;
+ box-sizing: border-box;   
+}
+
+a{
+    text-decoration: none;
+    font-family:'PT Sans', sans-serif;
+}
+
+.container{
+  margin-left: 5rem;
+  text-align: center;
+  padding: 2rem 10rem;
+}
+.navBrand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.d-flex{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.justify-between{
+ justify-content: space-between;   
+}
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: #ffffff;
+}
+.textDark{
+    color:#121212;
+}
+.inline{
+    display: inline-block;
+}
+.text-light{
+    color: var(--light);
+}
+.text-gradient{
+    
+background: radial-gradient(circle, rgba(63,94,251,1) 90%, rgba(70,129,252,0.2947303921568627) 100%);
+-webkit-background-clip:text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#header nav{
+    background: radial-gradient(circle, rgba(220,63,251,0.7457107843137255) 30%, rgba(252,155,70,0.3647584033613446) 100%);
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.siteMain{
+    margin-top: 6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.siteMain .container .box-nav > a{
+ font-size: 1em;
+ padding: 2em 1em;
+ border-radius: 20%;
+}
+.siteMain .container form{
+    margin: 2rem 0;
+}
+table{
+    border-spacing: 0px;
+    width: 100%;
+   
+}
+.table td, .table th{
+padding: 0.75rem;
+vertical-align: top;
+text-align: center;
+border-top: 1px solid var(--border);
+}
+.table td>a.btn{
+padding:0.3rem 1rem;
+font-size: 1.1rem;
+margin: 0 0.2rem;
+}
+.table tr:hover{
+    background-color: rgb(220, 157, 20);
+}
+.table tr:hover td>a{
+box-shadow: none;
+}
+.table .table-dark th{
+    color: #ffffff;
+    background-color:#121212;
+    border-color: #121212;
+}
+@media screen and (max-width:1440px){
+ .container{
+  margin-right: 15rem;
+ }   
+}
+@media screen and (max-width:800px) {
+ #navbar{
+  width: 100%;
+
+ } 
+ .container{
+    width: 100%;
+   }   
+}
+/*.....add user and update user template...*/
+.form-title{
+    margin-top: 2rem;
+}
+.form-title>h2{
+padding: 0.5rem 0;
+}
+.newUser{
+
+    max-width: 786px;
+    margin: auto;
+
+}
+#updateUser .form-group{
+margin: 1rem 0;
+}
+#addUser .form-group{
+    margin: 1rem 0;
+}
+#updateUser .form-group input[type="text"],
+#addUser .form-group input[type="text"]{
+    width: 100%;
+    padding: 0.6rem 1rem ;
+    margin:2rem 0;
+    border: 1px solid var(--border); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    border-radius: 2rem; 
+}
+#updateUser .form-group .radio,
+#addUser .form-group .radio{
+    margin:1rem 2rem;
+}
+/*---styles to radio button---*/
+.radio input[type="radio"]{
+    background:var(#32e3dd);
+    border: 1px solid var(--border-btn);
+    cursor:pointer;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked{
+    background: #18e0e3;
+    box-shadow: inset 0 0 0 4px #69e475;
+}
+.radio input[type="radio"]:focus{
+    outline: none;
+    border-color: aqua;
+}
+.radio input[type="radio"]:disabled{
+    box-shadow: inset 0 0 0 4px #DCD6D0;
+    border-color: #a89e9e;  
+    background-color: #dedcdb;
+}
+#updateUser .form-group .btn,
+#addUser .form-group .btn{
+width: 100px;
+padding:0.9rem 1rem;
+background-color: #18e0e3;
+border: none;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 1rem;
+cursor:pointer;
+border-radius: 0.2rem;
+margin:0.5rem 0;
+}
+
+#updateUser .form-group .btn:hover,
+#addUser .form-group .btn:hover{
+    background-color: #000000;
+    color:var(--border);
+}
